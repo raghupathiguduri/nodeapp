@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build --tag testnode .
+                sh 'docker build . --tag testnode
             }
         }
         stage('Test') { 
